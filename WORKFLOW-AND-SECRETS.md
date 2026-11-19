@@ -1,0 +1,1 @@
+See [student lab manual](../STUDENT-LAB-MANUAL.md), sections 3–6. The canonical workflow is `.github/workflows/main.yml`. GitHub repository and environment secrets are configured in GitHub Settings > Secrets and variables > Actions.
