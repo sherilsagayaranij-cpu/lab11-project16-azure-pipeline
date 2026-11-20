@@ -1,0 +1,2 @@
+const test=require('node:test');const assert=require('node:assert/strict');const http=require('http');const app=require('./server');
+test('health responds healthy',async()=>{const s=http.createServer(app).listen(0);try{const response=await fetch(`http://127.0.0.1:${s.address().port}/health`);assert.equal(response.status,200);assert.equal((await response.json()).status,'healthy')}finally{s.close()}});
